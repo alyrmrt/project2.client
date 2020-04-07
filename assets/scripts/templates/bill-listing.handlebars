@@ -1,0 +1,16 @@
+<div class="container">
+   <h2>Bills: </h2>
+   <ul id="bills">
+   {{#each bills as |bill|}}
+     <li>
+       {{bill.type_of}}
+     </li>
+     <li>
+       ${{bill.amount}}
+     </li>
+     <li>
+       {{bill.due_on}}
+     </li>
+   {{/each}}
+   </ul>
+</div>
