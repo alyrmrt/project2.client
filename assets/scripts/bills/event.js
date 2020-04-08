@@ -34,6 +34,10 @@ const removeHide = $('#add-bills').click(function () {
 })
 
 
+
+
+
+
 const addHandlers = () => {
   $('.content').on('click', '.delete-btn', onDeleteBills)
 }

@@ -36,7 +36,7 @@ main {
     &:empty {
       &::before {
         color: lighten($info, 50%);
-        content: 'BILL TRACK ';
+        content: 'FAST PAY';
         font-size: 10vh;
         line-height: .85;
         text-align: center;
