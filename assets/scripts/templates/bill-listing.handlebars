@@ -1,16 +1,19 @@
-<div class="container">
-   <h2>Bills: </h2>
-   <ul id="bills">
-   {{#each bills as |bill|}}
-     <li>
-       {{bill.type_of}}
-     </li>
-     <li>
-       ${{bill.amount}}
-     </li>
-     <li>
-       {{bill.due_on}}
-     </li>
-   {{/each}}
-   </ul>
-</div>
+{{#each bills as |bill|}}
+{{log book}}
+<section data-id="{{bill.id}}">
+  <h6>Bill:</h6>
+  <h5>
+    ID: {{bill.id}}
+  <h5/>
+  <h5>
+    TYPE OF: {{bill.type_of}}
+  <h5/>
+  <h5>
+    AMOUNT: ${{bill.amount}}
+  <h5/>
+  <h5>
+    DUE ON: {{bill.due_on}}
+  <h5/>
+  <button data-id="{{bill.id}}" class="btn btn-danger delete-btn">Delete</button>
+</section>
+{{/each}}

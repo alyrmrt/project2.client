@@ -5,14 +5,12 @@ const getBillsTemplate = require('../templates/bill-listing.handlebars')
 const getBillsSuccess = function (data) {
   store.bills = data.bills
   const getBillsHtml = getBillsTemplate({bills: data.bills})
-  $('#message').html(getBillsHtml)
+  $('.content').html(getBillsHtml)
 }
 
 const addBillsSuccess = function () {
   ('#message').text('success')
 }
-
-
 
 
 module.exports = {

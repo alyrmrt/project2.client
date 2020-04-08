@@ -18,7 +18,24 @@ const onaddBills = function (event) {
     .catch(ui.failure)
 }
 
+const onDeleteBills = (event) => {
+  const id = $(event.target).data('id')
+  api.deleteBills(id)
+  .then(function () {
+ ongetBills(event)
+})
+}
+
+const addHandlers = () => {
+  $('.content').on('click', '.delete-btn', onDeleteBills)
+}
+
+
+
+
+
 module.exports = {
   ongetBills,
-  onaddBills
+  onaddBills,
+  addHandlers
 }

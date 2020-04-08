@@ -13,4 +13,5 @@ $(() => {
   $('#change-password').on('submit', authEvents.onChangePassword)
   $('#get-bills').on('click', billsEvents.ongetBills)
   $('#create-bills').on('submit', billsEvents.onaddBills)
+  billsEvents.addHandlers()
 })

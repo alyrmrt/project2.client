@@ -22,7 +22,18 @@ const addBills = function (data) {
   })
 }
 
+const deleteBills = function (id) {
+  return $.ajax({
+    url: config.apiUrl + '/bills/' + id,
+    method: 'DELETE',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    }
+  })
+}
+
 module.exports = {
   getBills,
-  addBills
+  addBills,
+  deleteBills
 }
