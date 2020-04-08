@@ -35,8 +35,8 @@ main {
 
     &:empty {
       &::before {
-        color: lighten($info, 25%);
-        content: ' ';
+        color: lighten($info, 50%);
+        content: 'BILL TRACK ';
         font-size: 10vh;
         line-height: .85;
         text-align: center;

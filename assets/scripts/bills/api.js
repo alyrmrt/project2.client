@@ -32,8 +32,12 @@ const deleteBills = function (id) {
   })
 }
 
+
+
+
 module.exports = {
   getBills,
   addBills,
   deleteBills
+
 }

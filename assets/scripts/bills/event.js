@@ -26,6 +26,9 @@ const onDeleteBills = (event) => {
 })
 }
 
+
+
+
 const removeHide = $('#add-bills').click(function () {
   $('#create-bills').removeClass('hide')
 })
