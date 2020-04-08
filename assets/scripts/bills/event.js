@@ -26,6 +26,11 @@ const onDeleteBills = (event) => {
 })
 }
 
+const removeHide = $('#add-bills').click(function () {
+  $('#create-bills').removeClass('hide')
+})
+
+
 const addHandlers = () => {
   $('.content').on('click', '.delete-btn', onDeleteBills)
 }
@@ -37,5 +42,6 @@ const addHandlers = () => {
 module.exports = {
   ongetBills,
   onaddBills,
-  addHandlers
+  addHandlers,
+  removeHide
 }
