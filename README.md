@@ -1,7 +1,7 @@
 The Fast Bill Application:
 
 The Fast Bills application have started as a bill tracking project but idea
-behind application is turning it to the bill paying application. User will be
+behind application is turning into the bill paying application. User will be
 able to track and pay any kind of bills. From regular monthly bills like gas,
 internet, electricity to parking tickets, house tax. Main idea is paying all
 regular bills with one click.
@@ -28,16 +28,17 @@ from the app and selling it to the other companies.
 --------------------------------------------------------------------------------
 User Stories:
 
-As a new user, I want to sign-up so that I can sing-in.
-As a registered user, I want to sign-in so that I can see my bills.
-As a signed-in user, I want to change password
-As a signed-in user, I want to sign out
-As a signed-in user, I want to add a new bill, type of, due date, amount.
-As a signed-in user, I want to update any bills if there is a late fee or
-extended due date
-As a signed-in user, I want to delete any bill from my list.
-As a signed-in user, I want to view all my bills.
---------------------------------------------------------------------------------
-API Repo:
+- As a new user, I want to sign-up so that I can sing-in.
+- As a registered user, I want to sign-in so that I can see my bills.
+- As a signed-in user, I want to change password
+- As a signed-in user, I want to sign out
+- As a signed-in user, I want to add a new bill, type of, due date, amount.
+- As a signed-in user, I want to update any bills if there is a late fee or
+- extended due date
+- As a signed-in user, I want to delete any bill from my list.
+- As a signed-in user, I want to view all my bills.
+--------------------------------------------------------
+
+Api  Repo:
 
 https://github.com/alyrmrt/project2-api
