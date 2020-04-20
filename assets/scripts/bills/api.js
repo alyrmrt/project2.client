@@ -33,11 +33,24 @@ const deleteBills = function (id) {
 }
 
 
+const updateBills = function (id, data) {
+  return $.ajax({
+    url: config.apiUrl + '/bills/' + id,
+    method: 'PATCH',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    data
+  })
+}
+
+
 
 
 module.exports = {
   getBills,
   addBills,
-  deleteBills
+  deleteBills,
+  updateBills
 
 }

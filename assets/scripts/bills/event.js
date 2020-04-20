@@ -26,6 +26,12 @@ const onDeleteBills = (event) => {
 })
 }
 
+const onUpdateBillButton = function (event) {
+  event.preventDefault()
+  const id = $(event.target).data('id')
+  ui.showUpdateBill(id)
+}
+
 
 
 
@@ -50,5 +56,6 @@ module.exports = {
   ongetBills,
   onaddBills,
   addHandlers,
-  removeHide
+  removeHide,
+  onUpdateBillButton
 }
